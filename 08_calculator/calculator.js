@@ -14,25 +14,25 @@ const sum = function(a) {
   return sum;
 };
 
-const multiply = function() {
+const multiply = function(a) {
   let sum = 1;
-  for (let i = 0; i < arguments.length; i++) {
-    sum *= arguments[i];
+  for (let i = 0; i < a.length; i++) {
+    sum *= a[i];
   }
-  return sum;
+  return parseInt(sum);
 };
 
 const power = function(a, b) {
-  let power = 0;
-	for (let i = 0; i < b; i++) {
-    power += a * a;
-  }
-  return power;
-
+  let num = Math.pow(a, b);
+  return num;
 };
 
-const factorial = function() {
-	
+const factorial = function(a) {
+	let num = 1;
+  for (let i = 1; i <= a; i++) {
+    num *= i;
+  }
+  return num;
 };
 
 // Do not edit below this line
